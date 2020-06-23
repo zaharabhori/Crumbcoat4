@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'gallery.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <div class="landingpage">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuz">
+              <i class="fas fa-align-justify" style="color: #e2c555;"></i>
+            </button>
+            <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo3.png' %}" width="220px" height="160px" alt="logo"></div>
+
+             </div>
+
+
+          <div class="collapse navbar-collapse" id="menuz">
+            <ul class="nav navbar-nav navbar-right">
+              <li id="item1"><a href="{% url 'home' %}">Home</a></li>
+              <li id="item2"><a href="{% url 'menu' %}">Menu</a></li>
+              <li id="item7"><a href="{% url 'home' %}#aboutus">About us</a></li>
+              <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+
+
+            </ul>
+
+        </div>
+        </div>
+      </nav>
+        <h3>The Gallery</h3>
+
+
+    </div>
+
+    <div class="row filler">
+      <h1 class="col-ms-12 col-sm-12 text-center">In the Crumbcaot Gallery...</h1>
+      <div class="col-ms-12 col-sm-12 text-center devider">
+        <img src="{% static 'images/devider3.png' %}" height="8%" width="30%">
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <header class="header">
+      <div class="container text-center">
+
+
+        <div class="menu">
+          <ul>
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".custom">Customised</a></li>
+            <li><a href="#" data-filter=".brownie">Brownies</a></li>
+            <li><a href="#" data-filter=".cupcake">Cupcakes</a></li>
+            <li><a href="#" data-filter=".macroon">Macroons</a></li>
+            <li><a href="#" data-filter=".doughnut">Doughnuts</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+</div>
+
+
+
+  <div class="content">
+    <div class="container-fluid" style="padding: 0px;">
+      {% for i in imgs %}
+      <figure class="card  {{i.choice}}">
+        <img src="{{i.img.url}}" alt="">
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="insta text-center">
+    <h1 style="font-family:'Great vibes', cursive; color:#b3a21f">Follow Crumbcoat on Instagram</h1>
+    <h1 style="font-family:'great vibes', cursive; color:#634b4b">For daily updates!</h1>
+    <h1 style="font-family:'suranna', serif; color:#b15784">@Crumbcaot.in</h1>
+  </div>
+
+  <div class="footer row" style="margin-left:0px;margin-right:0px;">
+
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Contact us on </p>
+      <a href="#">zaharabhori@gmail.com</a>
+      <p>+91 7745628728</p>
+
+    </div>
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Follow us on </p>
+      <i class="fab fa-instagram fa-2x"></i>
+      <i class="fab fa-facebook-square fa-2x"></i>
+      <i class="fab fa-whatsapp fa-2x"></i>
+
+    </div>
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Address <br>
+      Hill mist garden, H-506</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript">
+  $(".container-fluid").isotope({
+    itemSelector: '.card',
+    layoutMode: 'fitRows'
+  });
+
+  $(".menu ul li a").click(function(){
+    $(".menu ul li a").removeClass("active");
+    $(this).addClass("active");
+
+    var selector = $(this).attr("data-filter");
+    $(".container-fluid").isotope({
+      filter: selector
+    });
+    return false
+  });
+
+</script>
+
+</body>
+</html>

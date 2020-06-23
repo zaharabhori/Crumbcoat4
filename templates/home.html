@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>landing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div class="landingpage">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fas fa-align-justify" style="color: #e2c555;"></i>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo3.png' %}" width="220px" height="160px" alt="logo"></div>
+
+           </div>
+
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="item1"><a href="{% url 'home' %}">Home</a></li>
+            <li id="item2"><a href="{% url 'menu' %}">Menu</a></li>
+            <li id="item7"><a href="{% url 'home' %}#aboutus">About us</a></li>
+            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+
+
+          </ul>
+
+      </div>
+      </div>
+    </nav>
+      <h1>We give Sweetgasms!</h1>
+
+    </div>
+
+    <div class="row filler"id="aboutus">
+      <h1 class="col-ms-12 col-sm-12 text-center">The Crumbcoat kitchen welcomes you!</h1>
+      <div class="col-ms-12 col-sm-12 devider text-center">
+        <img src="{% static 'images/devider3.png' %}" width="30%">
+      </div>
+      <p class="col-md-12 col-sm-12 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <div class="icons col-md-3 col-sm-3 col-xs-3 text-center">
+        <img src="{% static 'images/cupcakeicon3.jpg' %}" width="100px" height="100px">
+      </div>
+      <div class="icons col-md-3 col-sm-3 col-xs-3 text-center">
+        <img src="{% static 'images/macroonicon2.png' %}"  width="100px" height="100px">
+      </div>
+      <div class="icons col-md-3 col-sm-3 col-xs-3 text-center">
+        <img src="{% static 'images/browniesicon.png' %}"  width="100px" height="100px">
+      </div>
+      <div class="icons col-md-3 col-sm-3 col-xs-3 text-center">
+        <img src="{% static 'images/cookiesicon2.jpg' %}"  width="100px" height="100px">
+      </div>
+
+      </div>
+
+    <div class="row aboutus">
+      <div class="col-md-8 col-sm-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <img src="{% static 'images/logo2.png' %}" alt="logo" width="350px" height="300px">
+      </div>
+    </div>
+
+
+    <div class="woffer text-center">
+      <h1>What we Offer....</h1>
+    </div>
+    <div class="offer">
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+
+
+        <div class="colmn col-md-3 col-xs-6">
+          <div class="card">
+          <div class="img-animation">
+            <img src="{% static 'images/macroons.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+          </div>
+          <div class="card-body text-center">
+            <h3 class="card-title">Macroons</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="col-md-3 col-xs-6">
+      <div class="card border-primary">
+      <div class="img-animation">
+        <img src="{% static 'images/cupcakes.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+      </div>
+      <div class="card-body text-center">
+        <h3 class="card-title">Cupcake</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-xs-6">
+    <div class="card">
+    <div class="img-animation">
+      <img src="{% static 'images/cookies.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+    </div>
+    <div class="card-body text-center">
+      <h3 class="card-title">Cookies</h3>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 col-xs-6">
+  <div class="card">
+  <div class="img-animation">
+    <img src="{% static 'images/brownies.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+  </div>
+  <div class="card-body text-center">
+    <h3 class="card-title">Brownies</h3>
+  </div>
+</div>
+</div>
+
+    </div>
+    </div>
+</div>
+
+<div class="customcakes row text-center">
+
+
+  <div class="container col-md-3" style="padding:0px;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="{% static 'images/wedddingcake.jpg' %}" alt="" style="width:100%; height:350px;">
+        </div>
+
+        <div class="item">
+          <img src="{% static 'images/birthdaycake.jpg' %}" alt="" style="width:100%; height:350px;">
+        </div>
+
+        <div class="item">
+          <img src="{% static 'images/cake.jpg' %}" alt="" style="width:100%; height:350px;">
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="info col-md-9" style="background-color:lavender; padding:0px;height:350px;">
+      <h2>Customised cakes for any ocassions!!</h2>
+      <img src="{% static 'images/devider6.png' %}" alt="" height="8%" width="50%">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+  </div>
+
+  <div class="footer row">
+
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Contact us on </p>
+      <a href="#">zaharabhori@gmail.com</a>
+      <p>+91 7745628728</p>
+
+    </div>
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Follow us on </p>
+      <a href="https://www.instagram.com/crumbcoat_in/"> <i class="fab fa-instagram fa-2x"></i> </a>
+      <i class="fab fa-facebook-square fa-2x"></i>
+      <i class="fab fa-whatsapp fa-2x"></i>
+
+    </div>
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Address <br>
+      Hill mist garden, H-506</p>
+    </div>
+  </div>
+
+
+  </body>
+</html>
