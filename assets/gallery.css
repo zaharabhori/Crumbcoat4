@@ -6,35 +6,61 @@ body,html{
 
 nav.navbar{
   border: 0px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 0;
+  background-color: #e8cef1;
+  margin: 0 ;
   z-index: 2;
-
+  height: 130px;
+  border-bottom: 1px solid gold;
 }
+
+
 
 .navbar-brand {
   position: absolute;
-  margin-top: -45px;
+  margin-top: -15px;
+}
+
+.navbar-brand img{
+   width: 170px;
+   height: 130px;
+}
+
+.land{
+  position: relative;
 }
 
 #menuz{
-  background-color: rgba(0, 0, 0, 0.3);
+  border: 0px;
+  width: 100%;
+}
+nav li{
+  top: 35px;
+  height: 50px;
 }
 
 nav li a {
-  top: 10px;
-  margin-bottom: 10px;
+
   font-family: 'Great vibes', cursive;
-  font-size: 36px;
-  color: #d2c462!important;
+  font-size: 40px;
+  color: #a78d00!important;
 }
 
 .landingpage{
   position: relative;
   height: 80%;
   width: 100%;
-  background-image: url('images/gallery4.jpg');
-  background-size:100% 100%;
+  background-image: url('images/cake14.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: shrink 5s infinite alternate;
+}
+@keyframes shrink {
+  0% {
+    background-size: 100% 130%;
+  }
+  100% {
+    background-size: 120% 150% ;
+  }
 }
 
 .landingpage:before{
@@ -42,17 +68,19 @@ nav li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255,255,255,0);
 }
 
+.landingpage:focus {
+transform: scale(1.5);
+}
 
-
-.landingpage h3{
+.landingpage h1{
   margin: 0;
   position: absolute;
   color: white;
-  font-size: 90px;
-  font-family: 'Parisienne', cursive;
+  font-size: 60px;
+  font-family: 'Dancing script', serif;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
@@ -64,9 +92,10 @@ nav li a {
 }
 
 .filler h1{
-
+  margin-top: 30px;
   color: #a78d00;
-  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-family: 'Great vibes', cursive;
 
 }
 
@@ -142,6 +171,38 @@ nav li a {
 }
 
 @media only screen and (max-width:600px) {
+  .filler h1{
+    font-size:10px;
+
+    font-family: 'Great vibes', cursive;
+  }
+
+  #menuz{
+    position: absolute;
+    width: 100%;
+    background-color:white;
+    z-index: -1;
+    text-align: center;
+    margin-top: 55px;
+  }
+  #menuz ul{
+    margin-top:-15px;
+    height: 240px;
+  }
+  nav.navbar{
+    height: 100px;
+  }
+
+  .navbar-brand{
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .navbar-brand img{
+    width: 120px;
+    height: 105px;
+  }
+
+
   .card{
     width: 50%;
   }
@@ -149,14 +210,7 @@ nav li a {
   .card img{
     height: 200px;
   }
-  .navbar-brand{
-    margin-left: -30px;
-    margin-top: -35px;
-  }
-  .navbar-brand img{
-    width: 200px;
-    height: 140px;
-  }
+
   .landingpage h3{
     font-size: 50px;
   }
@@ -195,27 +249,28 @@ nav li a {
 
   margin: 0 auto;
 }
-
 .footer{
-  background-image: url('images/gallery4.jpg');
+  background-color: #e8cef1;
   background-size:100% ;
+  background-position: center center;
   position: relative;
   margin-top: 20px;
   padding: 0px;
+  border-top: 1px solid gold;
 }
 
 
 .footer p{
   font-family: 'Great vibes', cursive;
   font-size: 30px;
-  color: #e2c555!important;
+  color: #a78d00!important;
 }
 
 .footer a{
   padding: 0;
   font-family: 'Great vibes', cursive;
   font-size: 25px;
-  color: #e2c555!important;
+  color: #a78d00!important;
 }
 .footerheading{
   padding-top: 20px;
@@ -225,23 +280,35 @@ nav li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .footer i{
-  color: #e2c555!important;
+  color: #a78d00!important;
   margin-left: 5px;
   margin-right: 5px;
+
 }
 @media only screen and (max-width:600px) {
   .footer{
-    background-image: url('images/gallery4.jpg');
-    background-size:600px 100%;
+    background-image: url('images/cake6.jpg');
+    background-size:180% 180%;
     position: relative;
     margin-top: 20px;
     padding: 0px;
   }
   .insta h1{
     font-size: 25px;
+  }
+  .footer p{
+    font-size: 25px;
+
+  }
+
+  .footer a{
+    font-size: 20px;
+  }
+  .footerheading{
+    padding-top: 10px;
   }
 }

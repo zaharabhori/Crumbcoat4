@@ -4,8 +4,11 @@
 
   <head>
     <meta charset="utf-8">
-    <title>landing</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Italianno&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'home.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -23,14 +26,13 @@
 
   <body>
 
-    <div class="landingpage">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
             <i class="fas fa-align-justify" style="color: #e2c555;"></i>
           </button>
-          <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo3.png' %}" width="220px" height="160px" alt="logo"></div>
+          <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo2.png' %}" alt="logo"></div>
 
            </div>
 
@@ -38,9 +40,9 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
             <li id="item1"><a href="{% url 'home' %}">Home</a></li>
-            <li id="item2"><a href="{% url 'menu' %}">Menu</a></li>
-            <li id="item7"><a href="{% url 'home' %}#aboutus">About us</a></li>
-            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li id="item2"><a href="{% url 'home' %}">About us</a></li>
+            <li id="item3"><a href="{% url 'home' %}">Menu</a></li>
+            <li id="item4"><a href="{% url 'home' %}">Gallery</a></li>
 
 
           </ul>
@@ -48,15 +50,66 @@
       </div>
       </div>
     </nav>
-      <h1>We give Sweetgasms!</h1>
+    <div class="row landingpage">
+      <div class="one col-md-6 col-sm-12">
+        <h1>Welcome to CrumbCoat</h1>
+        <h5>Had a bitter day?<br>We make sweet things happen..<br>Oh yes!<br>We give Sweetgasms</h5>
+        <a href="https://wa.me/9370412343"><button class="button button1" type="button">Order now</button></a>
+      </div>
+      <div class="two col-md-6 col-sm-12">
+
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+
+
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="{% static 'images/cake21.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="{% static 'images/cake25.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="{% static 'images/cake34.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/cake28.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/cake22.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/cake29.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+                <div class="item">
+                  <img src="{% static 'images/cake32.jpg' %}" alt="" style="width:100%; height:100%;">
+                </div>
+              </div>
+
+            </div>
+            </div>
+
+
 
     </div>
 
     <div class="row filler"id="aboutus">
       <h1 class="col-ms-12 col-sm-12 text-center">The Crumbcoat kitchen welcomes you!</h1>
-      <div class="col-ms-12 col-sm-12 devider text-center">
-        <img src="{% static 'images/devider3.png' %}" width="30%">
-      </div>
+
       <p class="col-md-12 col-sm-12 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
@@ -75,14 +128,7 @@
 
       </div>
 
-    <div class="row aboutus">
-      <div class="col-md-8 col-sm-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="col-md-4 col-sm-12 text-center">
-        <img src="{% static 'images/logo2.png' %}" alt="logo" width="350px" height="300px">
-      </div>
-    </div>
+
 
 
     <div class="woffer text-center">
@@ -96,48 +142,72 @@
 
 
 
-        <div class="colmn col-md-3 col-xs-6">
+        <div class="colmn col-md-2 col-sm-4 col-xs-6">
           <div class="card">
           <div class="img-animation">
-            <img src="{% static 'images/macroons.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+            <img src="{% static 'images/cakecard.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
           </div>
           <div class="card-body text-center">
-            <h3 class="card-title">Macroons</h3>
+            <h3 class="card-title">Cakes</h3>
           </div>
         </div>
       </div>
 
 
 
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-2 col-sm-4 col-xs-6">
       <div class="card border-primary">
       <div class="img-animation">
-        <img src="{% static 'images/cupcakes.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+        <img src="{% static 'images/cake26.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
       </div>
       <div class="card-body text-center">
-        <h3 class="card-title">Cupcake</h3>
+        <h3 class="card-title">Custom cakes</h3>
       </div>
     </div>
   </div>
 
-  <div class="col-md-3 col-xs-6">
-    <div class="card">
+  <div class="col-md-2 col-sm-4 col-xs-6">
+    <div class="card border-primary">
     <div class="img-animation">
-      <img src="{% static 'images/cookies.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+      <img src="{% static 'images/browniecard.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
     </div>
     <div class="card-body text-center">
-      <h3 class="card-title">Cookies</h3>
+      <h3 class="card-title">Brownies</h3>
     </div>
   </div>
 </div>
 
-<div class="col-md-3 col-xs-6">
+<div class="col-md-2 col-sm-4 col-xs-6">
   <div class="card">
   <div class="img-animation">
-    <img src="{% static 'images/brownies.jpg' %}" alt="" class="card-img-top" width="100%" height="230px">
+    <img src="{% static 'images/macrooncard.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
   </div>
   <div class="card-body text-center">
-    <h3 class="card-title">Brownies</h3>
+    <h3 class="card-title">Macroons</h3>
+  </div>
+</div>
+</div>
+
+<div class="col-md-2 col-sm-4 col-xs-6">
+  <div class="card border-primary">
+  <div class="img-animation">
+    <img src="{% static 'images/cupcakecard.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
+  </div>
+  <div class="card-body text-center">
+    <h3 class="card-title">Cupcakes</h3>
+  </div>
+</div>
+</div>
+
+
+
+<div class="col-md-2 col-sm-4 col-xs-6">
+  <div class="card">
+  <div class="img-animation">
+    <img src="{% static 'images/cheesecakecard.jpg' %}" alt="" class="card-img-top" width="100%" height="190px">
+  </div>
+  <div class="card-body text-center">
+    <h3 class="card-title">Cheesecakes</h3>
   </div>
 </div>
 </div>
@@ -146,64 +216,25 @@
     </div>
 </div>
 
-<div class="customcakes row text-center">
-
-
-  <div class="container col-md-3" style="padding:0px;">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="{% static 'images/wedddingcake.jpg' %}" alt="" style="width:100%; height:350px;">
-        </div>
-
-        <div class="item">
-          <img src="{% static 'images/birthdaycake.jpg' %}" alt="" style="width:100%; height:350px;">
-        </div>
-
-        <div class="item">
-          <img src="{% static 'images/cake.jpg' %}" alt="" style="width:100%; height:350px;">
-        </div>
-      </div>
-
-    </div>
-    </div>
-
-
-
-    <div class="info col-md-9" style="background-color:lavender; padding:0px;height:350px;">
-      <h2>Customised cakes for any ocassions!!</h2>
-      <img src="{% static 'images/devider6.png' %}" alt="" height="8%" width="50%">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-
-  </div>
 
   <div class="footer row">
 
     <div class="col-md-4 col-sm-12 text-center">
       <p class="footerheading">Contact us on </p>
-      <a href="#">zaharabhori@gmail.com</a>
-      <p>+91 7745628728</p>
+      <p>+91 9370412343</p>
 
     </div>
     <div class="col-md-4 col-sm-12 text-center">
       <p class="footerheading">Follow us on </p>
-      <a href="https://www.instagram.com/crumbcoat_in/"> <i class="fab fa-instagram fa-2x"></i> </a>
-      <i class="fab fa-facebook-square fa-2x"></i>
-      <i class="fab fa-whatsapp fa-2x"></i>
+      <a href="https://www.instagram.com/crumbcoat_in/"><i class="fab fa-instagram fa-lg"></i> </a>
+      <a href="https://m.facebook.com/crumbcoat_in-115230163204962/?__tn__=C-R"><i class="fab fa-facebook-square fa-lg"></i></a>
+      <a href="https://wa.me/9370412343"><i class="fab fa-whatsapp fa-lg"></i></a>
 
     </div>
     <div class="col-md-4 col-sm-12 text-center">
-      <p class="footerheading">Address <br>
-      Hill mist garden, H-506</p>
+
+      <p class="footerheading">Kondhwa, Pune</p>
+      <i class="fas fa-map-marker-alt fa-2x"></i>
     </div>
   </div>
 

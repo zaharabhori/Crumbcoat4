@@ -4,16 +4,16 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>menu</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'menu.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -26,24 +26,23 @@
 
   <body>
 
-    <div class="landingpage">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
             <i class="fas fa-align-justify" style="color: #e2c555;"></i>
           </button>
-          <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo3.png' %}" width="220px" height="160px" alt="logo"></div>
+          <div class="navbar-brand navbar-brand-centered"><img src="images/logo2.png" alt="logo"></div>
 
            </div>
 
 
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
-            <li id="item1"><a href="{% url 'home' %}">Home</a></li>
-            <li id="item2"><a href="{% url 'menu' %}">Menu</a></li>
-            <li id="item7"><a href="{% url 'home' %}#aboutus">About us</a></li>
-            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>i
+            <li id="item1"><a href="home.html">Home</a></li>
+            <li id="item7"><a href="aboutus.html">About us</a></li>
+            <li id="item7"><a href="menu.html">Menu</a></li>
+            <li id="item4"><a href="gallery.html">Gallery</a></li>
 
 
           </ul>
@@ -51,67 +50,15 @@
       </div>
       </div>
     </nav>
-    <h3>The Menu</h3>
+
+    <div class="heading text-center">
+      <h6>The Patisserie</h6>
+      <p>Along with cakes for every accasion CrumbCoat also offers a <br>wide range of delicious patissire</p>
     </div>
-
-    <div class="cakeintro">
-      <h1 class="text-center">Cakes for any occasion...</h1>
-    </div>
-
-    <div class="cakemenu">
-      <div class="col-md-5 col-sm-0 col-xs-0  div1">
-
-      </div>
-      <div class="col-md-7 col-sm-12 col-xs-12 div2">
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Simple cakes</h3>
-          <p>1 kg..... ₹600</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Customised cakes</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Printed cakes</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Fondant cakes</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Cheese cakes</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Mousse cakes</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Cake jars</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-        <div class="a col-md-6 col-sm-6 col-xs-6 text-center">
-          <h3>Entremets</h3>
-          <p>1 kg..... ₹800</p>
-        </div>
-
-
-
-        </div>
-      </div>
-
-      <div class="patisserie text-center">
-        <h1>Patisserie</h1>
-      </div>
-      <div class="devider text-center" style="position:relative; height:5%; width:100%; margin-top: 40px; margin-bottom:-20px;">
-        <img src="{% static 'images/devider6.png' %}" alt="" height="100%" width="80%">
-      </div>
-
 
       <div class="row choices text-center" style="margin-left:0px;">
-        <div class="col-md-6 col-xs-12">
-          <div class="decorc">
+        <div class="col-md-6 col-xs-12 selection">
+          <div class="decor">
 
           </div>
 
@@ -129,95 +76,94 @@
           <p>Lemon Blueberry</p>
         </div>
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 selection">
           <div class="decor">
 
           </div>
           <h3>Macroons</h3>
-          <p>White Chocolate and Raspberry - ₹50</p>
-          <p>Coffe - ₹50</p>
-          <p>Hazelnut - ₹50</p>
-          <p>Snickers - ₹50</p>
-          <p>Crerme Brulee - ₹50</p>
-          <p>Lemon and Mint - ₹50</p>
-          <p>Rose and Lychee - ₹50</p>
-          <p>Rainbow - ₹50</p>
-          <p>Cotton Candy - ₹50</p>
-          <p>Blueberry - ₹50</p>
-          <p>Cola - ₹50</p>
+          <p>White Chocolate and Raspberry</p>
+          <p>Coffe</p>
+          <p>Hazelnut</p>
+          <p>Snickers</p>
+          <p>Crerme Brulee</p>
+          <p>Lemon and Mint</p>
+          <p>Rose and Lychee</p>
+          <p>Rainbow</p>
+          <p>Cotton Candy</p>
+          <p>Blueberry</p>
+          <p>Cola</p>
         </div>
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 selection">
           <div class="decor">
 
           </div>
           <h3>Cupcakes</h3>
-          <p>Classic Chocolate - ₹50</p>
-          <p>Peanut Butter and Chocolate - ₹50</p>
-          <p>Nutella - ₹50</p>
-          <p>Cappucino - ₹50</p>
-          <p>Mint Chocolate - ₹50</p>
+          <p>Classic Chocolate</p>
+          <p>Peanut Butter and Chocolate</p>
+          <p>Nutella</p>
+          <p>Cappucino</p>
+          <p>Mint Chocolate</p>
         </div>
 
 
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 selection">
           <div class="decor">
 
           </div>
           <h3>Brownies</h3>
-          <p>Fudgy Chocolate - ₹50</p>
-          <p>Nutella - ₹50</p>
-          <p>Peanut Butter - ₹50</p>
-          <p>Cookie Dough - ₹50</p>
-          <p>Oreo - ₹50</p>
+          <p>Fudgy Chocolate</p>
+          <p>Nutella</p>
+          <p>Peanut Butter</p>
+          <p>Cookie Dough</p>
+          <p>Oreo</p>
         </div>
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 selection">
           <div class="decor">
 
           </div>
           <h3>Choux</h3>
-          <p>Chocolate - ₹50</p>
-          <p>Strawberry - ₹50</p>
-          <p>Caramel - ₹50</p>
-          <p>Blueberry - ₹50</p>
+          <p>Chocolate</p>
+          <p>Strawberry</p>
+          <p>Caramel</p>
+          <p>Blueberry</p>
         </div>
 
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 selection">
           <div class="decor">
 
           </div>
           <h3>Cookies</h3>
-          <p>Chocochip - ₹50</p>
-          <p>Double Chocolate - ₹50</p>
-          <p>Peanut Butter - ₹50</p>
-          <p>Oats and Resins - ₹50</p>
-          <p>Crinkle - ₹50</p>
+          <p>Chocochip</p>
+          <p>Double Chocolate</p>
+          <p>Peanut Butter</p>
+          <p>Oats and Resins</p>
+          <p>Crinkle</p>
         </div>
     </div>
+
+
 
     <div class="footer row">
 
       <div class="col-md-4 col-sm-12 text-center">
         <p class="footerheading">Contact us on </p>
-        <a href="#">zaharabhori@gmail.com</a>
-        <p>+91 7745628728</p>
+        <p>+91 9370412343</p>
 
       </div>
       <div class="col-md-4 col-sm-12 text-center">
         <p class="footerheading">Follow us on </p>
-        <i class="fab fa-instagram fa-2x"></i>
-        <i class="fab fa-facebook-square fa-2x"></i>
-        <i class="fab fa-whatsapp fa-2x"></i>
+        <a href="https://www.instagram.com/crumbcoat_in/"><i class="fab fa-instagram fa-lg"></i> </a>
+        <a href="https://m.facebook.com/crumbcoat_in-115230163204962/?__tn__=C-R"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="https://wa.me/9370412343"><i class="fab fa-whatsapp fa-lg"></i></a>
 
       </div>
       <div class="col-md-4 col-sm-12 text-center">
-        <p class="footerheading">Address <br>
-        Hill mist garden, H-506</p>
+
+        <p class="footerheading">Kondhwa, Pune</p>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
       </div>
     </div>
-
-
-
   </body>

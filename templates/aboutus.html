@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playball&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'aboutus.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fas fa-align-justify" style="color: #e2c555;"></i>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><img src="{% static 'images/logo2.png' %}" alt="logo"></div>
+
+           </div>
+
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="item1"><a href="home.html">Home</a></li>
+            <li id="item2"><a href="aboutus.html">About us</a></li>
+            <li id="item3"><a href="menu.html">Menu</a></li>
+            <li id="item4"><a href="gallery.html">Gallery</a></li>
+
+
+          </ul>
+
+      </div>
+      </div>
+    </nav>
+
+    <div class="row story">
+      <div class="col-md-6 col-sm-6 imgbd">
+        <div class="backdrop1">
+
+        </div>
+        <div class="image1">
+        <img src="{% static 'images/insi.jpg' %}" alt="" height="400px" width="300px">
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <p>Grew up as a child who preferred watching cooking shows over cartoon unlike any normal kid, I always knew what i wanted to take up as my profession since then. I was 13-14 years old when my parents bought me an oven and I started making basic cakes and cookies. As soon as college got over I took up acourse and started taking orders meanwhile. </p>
+      </div>
+    </div>
+
+    <div class="row story row2">
+      <div class="desktop-visible col-md-7 col-sm-7" >
+        <p>After that I wantedt to pursue higher education in patissire but life had other plans and I did my Bachelors in home science with specialisation in Human Development. Finally came the day, when I left for Banglore to persue 'Diplome de Patisserie' from the Lavonne Academy and finally after six months of learning and collosal experience I came back to Pune as a Pastry Chef.</p>
+      </div>
+      <div class="col-md-5 col-sm-5 imgbd">
+        <div class="backdrop2">
+
+        </div>
+        <div class="image2">
+        <img src="{% static 'images/insi2.jpg' %}" alt="" height="420px" width="320px">
+        </div>
+        <div class="desktop-hide col-md-7 col-sm-7" >
+          <p>After that I wantedt to pursue higher education in patissire but life had other plans and I did my Bachelors in home science with specialisation in Human Development. Finally came the day, when I left for Banglore to persue 'Diplome de Patisserie' from the Lavonne Academy and finally after six months of learning and collosal experience I came back to Pune as a Pastry Chef.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row story row3">
+      <div class="col-md-6 col-sm-6 imgbd">
+        <div class="backdrop3">
+
+        </div>
+        <div class="image3">
+        <img src="{% static 'images/insi4.jpg' %}" alt="" height="420px" width="320px">
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <p>Now it was time when my passion was ready to take flight. I was all ready to materialise my dream and hard work, to take my baking hobby to an all new professional level. Finally CrumbCoat was launched on the 14th of August 2018. It's been an amazingly crazy journey and I have truly relished every moment of it and ofcourse, CrumbCoat has way long to go!</p>
+      </div>
+    </div>
+
+    <div class="footer row">
+
+      <div class="col-md-4 col-sm-12 text-center">
+        <p class="footerheading">Contact us on </p>
+        <p>+91 9370412343</p>
+
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <p class="footerheading">Follow us on </p>
+        <a href="https://www.instagram.com/crumbcoat_in/"><i class="fab fa-instagram fa-lg"></i> </a>
+        <a href="https://m.facebook.com/crumbcoat_in-115230163204962/?__tn__=C-R"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="https://wa.me/9370412343"><i class="fab fa-whatsapp fa-lg"></i></a>
+
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+
+        <p class="footerheading">Kondhwa, Pune</p>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+      </div>
+    </div>
+
+  </body>
+</html>

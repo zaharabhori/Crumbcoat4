@@ -10,3 +10,6 @@ def gallery(request):
 
 def menu(request):
     return(render(request, "menu.html"))
+
+def aboutus(request):
+    return(render(request, "aboutus.html"))
