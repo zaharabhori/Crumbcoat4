@@ -191,7 +191,7 @@ body,html{
   
     }
     .backdrop2{
-      margin-right: -60px;
+      margin-right: -120px;
       height:325px;
       width:180px;
     }
@@ -201,12 +201,12 @@ body,html{
       width: 200px;
     }
     .image1,.image3{
-      margin-top: -285px;
+      margin-top: -310px;
       margin-left: 35px;
     }
     .image2{
-      margin-top: -360px;
-      margin-right: 35px;
+      margin-top: -370px;
+      margin-right: 55px;
     }
     .story p{
       margin: 10px;
