@@ -185,13 +185,13 @@ body,html{
       text-align: center;
     }
     .backdrop1,.backdrop3{
-      margin-left: 150px;
+      margin-left: 50px;
       height:345px;
       width:125px;
   
     }
     .backdrop2{
-      margin-right: -120px;
+      margin-right: -220px;
       height:325px;
       width:180px;
     }
@@ -201,7 +201,7 @@ body,html{
       width: 200px;
     }
     .image1,.image3{
-      margin-top: -310px;
+      margin-top: -325px;
       margin-left: 35px;
     }
     .image2{
