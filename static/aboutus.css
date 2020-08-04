@@ -187,18 +187,17 @@ body,html{
     .backdrop1,.backdrop3{
       margin-left: 50px;
       height:305px;
-      width:160px;
+      width:180px;
   
     }
     .backdrop2{
-      margin-left: 50px;
       height:305px;
-      width:160px;
+      width:180px;
     }
   
     .image1 img, .image2 img, .image3 img{
-      height: 240px;
-      width: 160px;
+      height: 250px;
+      width: 180px;
     }
     .image1,.image3{
       margin-top: -297px;
