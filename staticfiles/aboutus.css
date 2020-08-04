@@ -185,27 +185,28 @@ body,html{
       text-align: center;
     }
     .backdrop1,.backdrop3{
-  
-      height:305px;
-      width:160px;
+      margin-left: 50px;
+      height:345px;
+      width:193px;
   
     }
     .backdrop2{
-      height:305px;
-      width:160px;
+      margin-left:130px;
+      height:325px;
+      width:193px;
     }
   
     .image1 img, .image2 img, .image3 img{
-      height: 240px;
-      width: 160px;
+      height: 270px;
+      width: 200px;
     }
     .image1,.image3{
-      margin-top: -297px;
+      margin-top: -325px;
       margin-left: 35px;
     }
     .image2{
-      margin-top: -340px;
-      margin-right: 35px;
+      margin-top: -370px;
+      margin-right: 55px;
     }
     .story p{
       margin: 10px;
@@ -221,13 +222,7 @@ body,html{
       display: contents;
     }
   
-    .footer{
-      background-image: url('images/cake6.jpg');
-      background-size:180% 180%;
-      position: relative;
-      margin-top: 20px;
-      padding: 0px;
-    }
+    
     .footer p{
       font-size: 25px;
   
