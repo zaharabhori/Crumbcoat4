@@ -227,7 +227,7 @@ transform: scale(1.5);
 }
 
 .item{
-  height: 600px;
+  height: 550px;
 }
 
 
@@ -269,7 +269,7 @@ transform: scale(1.5);
   }
 
   .item{
-    height: 275px;
+    height: 305px;
   }
 
 
@@ -325,7 +325,7 @@ transform: scale(1.5);
   }
 
   .card img{
-    height: 100px;
+    height: 130px;
   }
 
   .card h3{
