@@ -227,7 +227,7 @@ transform: scale(1.5);
 }
 
 .item{
-  height: 600px;
+  height: 550px;
 }
 
 
@@ -269,7 +269,7 @@ transform: scale(1.5);
   }
 
   .item{
-    height: 275px;
+    height: 305px;
   }
 
 
@@ -325,7 +325,7 @@ transform: scale(1.5);
   }
 
   .card img{
-    height: 100px;
+    height: 130px;
   }
 
   .card h3{
@@ -399,13 +399,7 @@ transform: scale(1.5);
 
 
 @media only screen and (max-width:600px) {
-  .footer{
-    background-image: url('images/cake23.jpg');
-    background-size:180% 180%;
-    position: relative;
-    margin-top: 20px;
-    padding: 0px;
-  }
+  
   .footer p{
     font-size: 25px;
 
