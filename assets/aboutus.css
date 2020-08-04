@@ -220,14 +220,7 @@ body,html{
     .desktop-hide{
       display: contents;
     }
-  
-    .footer{
-      background-image: url('images/cake6.jpg');
-      background-size:180% 180%;
-      position: relative;
-      margin-top: 20px;
-      padding: 0px;
-    }
+
     .footer p{
       font-size: 25px;
   
