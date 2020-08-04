@@ -186,18 +186,19 @@ body,html{
     }
     .backdrop1,.backdrop3{
       margin-left: 50px;
-      height:305px;
+      height:325px;
       width:180px;
   
     }
     .backdrop2{
-      height:305px;
+      margin-right: -60px;
+      height:325px;
       width:180px;
     }
   
     .image1 img, .image2 img, .image3 img{
-      height: 250px;
-      width: 180px;
+      height: 270px;
+      width: 200px;
     }
     .image1,.image3{
       margin-top: -297px;
