@@ -1,0 +1,420 @@
+body,html{
+  width: 100%;
+  height:100%;
+  overflow-x: hidden;
+}
+
+nav.navbar{
+  border: 0px;
+  background-color: #e8cef1;
+  margin: 0 ;
+  z-index: 2;
+  height: 130px;
+  border-bottom: 1px solid gold;
+}
+
+
+
+.navbar-brand {
+  position: absolute;
+  margin-top: -15px;
+}
+
+.navbar-brand img{
+   width: 170px;
+   height: 130px;
+}
+
+nav li{
+  top: 35px;
+  height: 50px;
+}
+
+.land{
+  position: relative;
+}
+
+#menu{
+  border: 0px;
+  width: 100%;
+}
+
+nav li a {
+
+  font-family: 'Great vibes', cursive;
+  font-size: 40px;
+  color: #a78d00!important;
+}
+
+
+.landingpage{
+  position: relative;
+  height: auto;
+}
+.one{
+  height: 80%;
+  text-align: center;
+  margin-top: 7%;
+}
+.one h1{
+  font-size: 70px;
+  font-family: 'Great Vibes', cursive;
+  color: #e2bf54;
+}
+.one h3{
+  font-size: 40px;
+  font-family: 'Great Vibes', cursive;
+  color: #a78d00;
+}
+.one h5{
+  font-size: 25px;
+  font-family: 'satisfy', cursive;
+  color: grey;
+}
+.two{
+  height: 80%;
+}
+
+
+
+.button1{
+  margin-top: 100px;
+  height: 60px;
+  width: 200px;
+  background-color: #e8cef1;
+  color: #a78d00;
+  border-radius: 20px;
+  font-size: 25px;
+  font-family: 'Nanum Myeongjo', serif;
+  margin-bottom: 50px;
+  border: 1px solid gold;
+}
+
+button:focus{outline:none !important;}
+
+
+
+
+.landingpage:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,2555,255,0.2);
+}
+
+.landingpage:focus {
+transform: scale(1.5);
+}
+
+
+
+.filler{
+
+  margin: 30px;
+  position: relative;
+  height: auto;
+}
+
+.filler h1{
+  font-size: 40px;
+  margin: 20px;
+  color: #a78d00;
+  font-family: 'Cinzel', serif;
+
+}
+
+.filler p{
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+
+}
+
+
+
+.aboutus{
+  position: relative;
+  top: 20px;
+  height: auto;
+}
+
+.aboutus p{
+  width: 100%;
+  background-color: #f3f3f3;
+  color: #bf9e24;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.offer{
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  background-color: white;
+
+}
+
+.woffer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: #e8cef1;
+  margin-bottom: -200px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+.woffer h1{
+  padding-top: 50px;
+  font-size: 42px;
+  color: #a78d00;
+  font-family: 'Great vibes', cursive;
+
+}
+
+.offer:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+
+.card{
+  margin-top: 20px;
+  background-color: #e8cef1;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card h3,.customcakes h2{
+  color: #a78d00;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+#myCarousel{
+
+  width: 100%;
+}
+
+.customcakes{
+  position: relative;
+  width: 80%;
+  margin-top: 50px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.customcakes p{
+  width: 100%;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.item{
+  height: 600px;
+}
+
+
+@media only screen and (max-width:600px) {
+
+  #menu{
+    position: absolute;
+    width: 100%;
+    background-color:white;
+    z-index: -1;
+    text-align: center;
+    margin-top: 55px;
+  }
+  #menu ul{
+    margin-top:-15px;
+    height: 240px;
+  }
+
+  nav.navbar{
+    height: 100px;
+  }
+
+  .one h1{
+    font-size: 30px !important;
+    margin: 5px;
+  }
+
+  .one h5{
+    font-size: 20px;
+    margin:20px;
+  }
+
+  .button1{
+    margin-top: 2px;
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+
+  .item{
+    height: 275px;
+  }
+
+
+
+  .customcakes.row{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .navbar-brand{
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .navbar-brand img{
+    width: 120px;
+    height: 105px;
+  }
+  .landingpage h1{
+    font-size: 45px;
+  }
+  .filler h1{
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  .filler p{
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  .icons img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .aboutus p{
+    display: none;
+  }
+
+  .aboutus img{
+    width: 250px;
+    height: 220px;
+  }
+
+  .woffer{
+    width: 200px;
+    height: 200px;
+    margin-bottom: -130px;
+  }
+
+  .woffer h1{
+    font-size: 33px;
+  }
+
+  .card img{
+    height: 100px;
+  }
+
+  .card h3{
+    font-size: 20px;
+  }
+
+  .customcakes h2 {
+    font-size: 27px;
+  }
+
+  .customcakes p{
+    font-size: 15px;
+    margin-top: -12px;
+  }
+
+
+
+  .info img{
+    width: 80%;
+  }
+  .devider img{
+    height: 20px;
+    width: 60%;
+  }
+
+}
+
+
+
+.footer{
+  background-color: #e8cef1;
+  background-size:100% ;
+  background-position: center center;
+  position: relative;
+  margin-top: 20px;
+  padding: 0px;
+  border-top: 1px solid gold;
+}
+
+
+.footer p{
+  font-family: 'Great vibes', cursive;
+  font-size: 30px;
+  color: #a78d00!important;
+}
+
+.footer a{
+  padding: 0;
+  font-family: 'Great vibes', cursive;
+  font-size: 25px;
+  color: #a78d00!important;
+}
+.footerheading{
+  padding-top: 20px;
+}
+.footer:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.footer i{
+  color: #a78d00!important;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .footer{
+    background-image: url("images/cake23.d658d9ef63f7.jpg");
+    background-size:180% 180%;
+    position: relative;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .footer p{
+    font-size: 25px;
+
+  }
+
+  .footer a{
+    font-size: 20px;
+  }
+  .footerheading{
+    padding-top: 10px;
+  }
+}
