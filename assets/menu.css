@@ -73,7 +73,7 @@ nav li a {
   position: relative;
   height: 80%;
   width: 100%;
-  background-image: url('images/cake3.jpg');
+  background-image: url('images/cake23.jpg');
   background-size: cover;
   background-position: center;
   animation: shrink 5s infinite alternate;
@@ -299,7 +299,7 @@ transform: scale(1.5);
 
 @media only screen and (max-width:600px) {
   .footer{
-    background-image: url('images/cake6.jpg');
+    background-image: url('images/cake23.jpg');
     background-size:180% 180%;
     position: relative;
     margin-top: 20px;
