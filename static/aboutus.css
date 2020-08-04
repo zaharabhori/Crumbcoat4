@@ -185,12 +185,13 @@ body,html{
       text-align: center;
     }
     .backdrop1,.backdrop3{
-  
+      margin-left: 50px;
       height:305px;
       width:160px;
   
     }
     .backdrop2{
+      margin-left: 50px;
       height:305px;
       width:160px;
     }
@@ -221,13 +222,7 @@ body,html{
       display: contents;
     }
   
-    .footer{
-      background-image: url('images/cake6.jpg');
-      background-size:180% 180%;
-      position: relative;
-      margin-top: 20px;
-      padding: 0px;
-    }
+    
     .footer p{
       font-size: 25px;
   
