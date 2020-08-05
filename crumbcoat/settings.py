@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 django_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = 'AKIASHD34IN5NIVL3GK6'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'crumbcoat-bucket'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

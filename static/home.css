@@ -118,9 +118,10 @@ transform: scale(1.5);
 
 .filler h1{
   font-size: 40px;
-  margin: 20px;
+  margin: 30px;
   color: #a78d00;
   font-family: 'Cinzel', serif;
+  
 
 }
 
@@ -326,7 +327,7 @@ transform: scale(1.5);
   }
 
   .card img{
-    height: 235px;
+    height: 200px;
   }
 
   .card h3{
