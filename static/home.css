@@ -75,9 +75,10 @@ nav li a {
   height: 80%;
 }
 
-.navbar button{
+#nav_button{
    margin-top: 25px;
    border: transparent;
+   height: auto;
 }
 
 .button1{
