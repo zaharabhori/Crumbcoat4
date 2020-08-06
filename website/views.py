@@ -13,3 +13,7 @@ def menu(request):
 
 def aboutus(request):
     return(render(request, "aboutus.html"))
+
+def data_view(request,types):
+    imgs = images.objects.all()
+    return(render(request, "gallery.html",{'imgs': imgs, 'type':types}))

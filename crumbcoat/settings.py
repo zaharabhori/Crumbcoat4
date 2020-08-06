@@ -134,8 +134,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 django_heroku.settings(locals())
 
-AWS_ACCESS_KEY_ID = 'AKIASHD34IN5NIVL3GK6'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_KEY']
 AWS_STORAGE_BUCKET_NAME = 'crumbcoat-bucket'
 
 AWS_S3_FILE_OVERWRITE = False

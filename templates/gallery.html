@@ -68,7 +68,7 @@
         <div class="menu">
           <ul>
             <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".custom">Customised</a></li>
+            <li><a href="#" data-filter=".cake">Cakes</a></li>
             <li><a href="#" data-filter=".brownie">Brownies</a></li>
             <li><a href="#" data-filter=".cupcake">Cupcakes</a></li>
             <li><a href="#" data-filter=".macroon">Macroons</a></li>
@@ -124,10 +124,19 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <script type="text/javascript">
+
+  $(document).ready(function(){
+    var type="{{type}}";
+
+    console.log(type);
+    document.querySelector("a[data-filter="+"'."+type+"']").click();
+  })
+
   $(".container-fluid").isotope({
     itemSelector: '.card',
     layoutMode: 'fitRows'
   });
+
 
   $(".menu ul li a").click(function(){
     $(".menu ul li a").removeClass("active");
