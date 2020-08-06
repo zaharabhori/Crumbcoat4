@@ -75,7 +75,9 @@ nav li a {
   height: 80%;
 }
 
-
+.navbar button i{
+  size: 100px;
+}
 
 .button1{
   margin-top: 100px;
