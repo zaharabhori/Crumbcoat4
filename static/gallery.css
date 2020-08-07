@@ -180,7 +180,6 @@ transform: scale(1.5);
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
@@ -237,8 +236,9 @@ transform: scale(1.5);
     width: 100%;
   }
   .img01{
-    height: 50%;
+    height: 40%;
     width: 100%;
+    margin: 0 auto;
   }
 }
 
