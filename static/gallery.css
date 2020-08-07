@@ -180,7 +180,6 @@ transform: scale(1.5);
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 500px;
   left: 0;
   top: 0;
   width: 100%;
@@ -201,6 +200,7 @@ transform: scale(1.5);
 .img01{
   height: 90%;
   width: 45%;
+  margin-top: 50px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -239,10 +239,9 @@ transform: scale(1.5);
   .img01{
     height: 60%;
     width: 90%;
+    margin-top: 50px;
   }
-  .modal{
-    padding-top: 300px;
-  }
+  
 }
 
 @media only screen and (max-width:600px) {
