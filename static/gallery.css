@@ -199,8 +199,8 @@ transform: scale(1.5);
 }
 
 .img01{
-  height: 90%;
-  width: 60%;
+  height: 100%;
+  width: 50%;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -219,7 +219,7 @@ transform: scale(1.5);
   position: absolute;
   top: 15px;
   right: 35px;
-  color: white;
+  color: white!important;
   font-size: 40px;
   transition: 0.3s;
 }
@@ -237,8 +237,8 @@ transform: scale(1.5);
     width: 100%;
   }
   .img01{
-    height: 100%;
-    width: 50%;
+    height: 50%;
+    width: 100%;
   }
 }
 
