@@ -180,6 +180,7 @@ transform: scale(1.5);
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  padding-top: 500px;
   left: 0;
   top: 0;
   width: 100%;
@@ -198,8 +199,8 @@ transform: scale(1.5);
 }
 
 .img01{
-  height: 100%;
-  width: 50%;
+  height: 90%;
+  width: 45%;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -218,7 +219,7 @@ transform: scale(1.5);
   position: absolute;
   top: 15px;
   right: 35px;
-  color: white!important;
+  color: white !important;
   font-size: 40px;
   transition: 0.3s;
 }
@@ -238,7 +239,9 @@ transform: scale(1.5);
   .img01{
     height: 40%;
     width: 100%;
-    margin: 0 auto;
+  }
+  .modal{
+    padding-top: 300px;
   }
 }
 
