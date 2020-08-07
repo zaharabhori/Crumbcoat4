@@ -29,30 +29,30 @@
 
   <body>
 
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="border: transparent;">
-              <i class="fas fa-align-justify fa-2x" style="color: #e2c555;"></i>
-            </button>
-            <div class="navbar-brand navbar-brand-centered"><a href="{% url 'home' %}" style="text-decoration: none;color: transparent;">"<img src="{% static 'images/logo2-min.png' %}" width="220px" height="160px" alt="logo"></a></div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="border: transparent;">
+            <i class="fas fa-align-justify fa-lg" style="color: #e2c555;"></i>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><a href="{% url 'home' %}" style="text-decoration: none;color: transparent;">"<img src="{% static 'images/logo2-min.png' %}" width="220px" height="160px" alt="logo"></a></div>
 
-             </div>
-
-
-          <div class="collapse navbar-collapse" id="menuz">
-            <ul class="nav navbar-nav navbar-right">
-              <li id="item1"><a href="{% url 'home' %}">Home</a></li>
-              <li id="item2"><a href="{% url 'aboutus' %}">About us</a></li>
-              <li id="item3"><a href="{% url 'menu' %}">Menu</a></li>
-              <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+           </div>
 
 
-            </ul>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="item1"><a href="{% url 'home' %}">Home</a></li>
+            <li id="item2"><a href="{% url 'aboutus' %}">About us</a></li>
+            <li id="item3"><a href="{% url 'menu' %}">Menu</a></li>
+            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
 
-        </div>
-        </div>
-      </nav>
+
+          </ul>
+
+      </div>
+      </div>
+    </nav>
 
 
     <div class="row filler">
@@ -86,17 +86,16 @@
   <div class="container-fluid" style="padding: 0px;">
     {% for i in imgs %}
     <figure class="card  {{i.choice}}">
-      <img id="myImg" src="{{i.img.url}}" alt="">
+      <img class="myImg" src="{{i.img.url}}" alt="">
     </figure>
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-    </div>
     {% endfor %}
   </div>
 </div>
 
-
+<div class="modal myModal">
+  <span class="close">&times;</span>
+  <img class="modal-content img01">
+</div>
 
 
   <div class="insta text-center">
@@ -155,17 +154,19 @@
     return false
   });
 
-  var modal = document.getElementById("myModal");
+  var modal = document.querySelector(".myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+var img = document.querySelectorAll(".myImg");
+var modalImg = document.querySelector(".img01");
+img.forEach(item => {
+  item.addEventListener('click',event=>{
+    modal.style.display = "block";
+    modalImg.src = item.src;
+  })
 }
+  
+);
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
