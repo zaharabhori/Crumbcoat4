@@ -409,7 +409,7 @@ transform: scale(1.5);
 
 }
 
-.copyright p{
+#copyright p{
   margin-top: 10px;
   font-size: 15px;
   font-family: sans-serif;
@@ -430,7 +430,7 @@ transform: scale(1.5);
   .footerheading{
     padding-top: 10px;
   }
-  .copyright p{
+  #copyright p{
     font-size: 12px;
   }
 }

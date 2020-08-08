@@ -376,7 +376,7 @@ transform: scale(1.5);
 
 }
 
-.copyright p{
+#copyright p{
   margin-top: 10px;
   font-size: 15px;
   font-family: sans-serif;
@@ -386,7 +386,7 @@ transform: scale(1.5);
 
 @media only screen and (max-width:600px) {
   
-  .copyright p{
+  #copyright p{
     font-size: 12px;
   }
   .insta h1{

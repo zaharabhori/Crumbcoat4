@@ -148,7 +148,7 @@ body,html{
   }
   
   
-  .copyright p{
+  #copyright p{
     margin-top: 10px;
     font-size: 15px;
     font-family: sans-serif;
@@ -157,7 +157,7 @@ body,html{
   
   @media only screen and (max-width:600px) {
 
-    .copyright p{
+    #copyright p{
       font-size: 12px;
     }
 
