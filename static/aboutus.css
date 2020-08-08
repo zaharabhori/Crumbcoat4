@@ -80,8 +80,9 @@ body,html{
   
   .story p{
     margin-top: 35%;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-family: 'Cormorant Garamond', cursive;
+    font-style: italic;
+    font-size: 18px;
     text-align: center;
   }
   
@@ -201,7 +202,7 @@ body,html{
     .backdrop2{
       margin-left:130px;
       height:325px;
-      width:193px;
+      width:220px;
     }
   
     .image1 img, .image2 img, .image3 img{
@@ -217,7 +218,7 @@ body,html{
       margin-right: 55px;
     }
     .story p{
-      margin: 10px;
+      margin: 15px;
       margin-top: 45px;
       font-size: 20px;
       text-align: center;
