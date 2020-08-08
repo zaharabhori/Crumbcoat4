@@ -210,6 +210,18 @@ transform: scale(1.5);
   margin-bottom: 30px;
 }
 
+.note{
+  position:relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.note p{
+  font-family: 'Great vibes', cursive;
+  font-size: 40px;
+  color: #a78d00!important;
+}
+
 @media only screen and (max-width:600px) {
   #menu{
     position: absolute;
@@ -264,6 +276,9 @@ transform: scale(1.5);
   }
   .choices p{
     font-size: 20px;
+  }
+  .note p{
+    font-size: 25px;
   }
 }
 
