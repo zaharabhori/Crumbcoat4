@@ -222,7 +222,19 @@ transform: scale(1.5);
   color: #a78d00!important;
 }
 
+.copyright p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width:600px) {
+
+  .copyright p{
+    font-size: 12px;
+  }
+
   #menu{
     position: absolute;
     width: 100%;

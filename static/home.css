@@ -409,6 +409,12 @@ transform: scale(1.5);
 
 }
 
+.copyright p{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
 
 
 @media only screen and (max-width:600px) {
@@ -423,5 +429,8 @@ transform: scale(1.5);
   }
   .footerheading{
     padding-top: 10px;
+  }
+  .copyright p{
+    font-size: 12px;
   }
 }
