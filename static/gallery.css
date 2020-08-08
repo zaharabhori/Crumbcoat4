@@ -220,13 +220,15 @@ transform: scale(1.5);
   top: 15px;
   right: 35px;
   color: white !important;
-  font-size: 40px;
+  font-size: 45px;
   transition: 0.3s;
+  z-index: 4;
+  opacity: 1;
 }
 
 .close:hover,
 .close:focus {
-  color:white;
+  color:gold !important;
   text-decoration: none;
   cursor: pointer;
 }
