@@ -44,6 +44,7 @@ nav li a {
   font-family: 'Great vibes', cursive;
   font-size: 40px;
   color: #a78d00!important;
+  padding-right: 10px;
 }
 
 
@@ -243,13 +244,19 @@ transform: scale(1.5);
     background-color:white;
     z-index: -1;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 16px;
+    border-bottom: 1px solid gold;
   }
   #menu ul{
     margin-top:-15px;
     height: 240px;
   }
 
+  #menu_bttn:active,#menu_bttn:focus{
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
   nav.navbar{
     margin-top: 0px;
     height: 100px;
