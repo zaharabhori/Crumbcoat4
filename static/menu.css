@@ -56,7 +56,7 @@ nav li a {
 .heading h6{
   color: #a78d00;
   font-size: 40px;
-  font-family: 'Rochester', serif;
+  font-family: 'Great vibes', cursive;
 
 }
 .heading p{
@@ -189,6 +189,7 @@ transform: scale(1.5);
 .choices p{
   font-family: 'Cormorant Garamond', serif;
   font-size: 25px;
+  font-style: italic;
   color: #2e2e33!important;
 
 }
