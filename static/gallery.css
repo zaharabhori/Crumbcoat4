@@ -257,11 +257,18 @@ transform: scale(1.5);
     background-color:white;
     z-index: -1;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 16px;
+    border-bottom: 1px solid gold;
   }
   #menu ul{
     margin-top:-15px;
     height: 240px;
+  }
+
+  #menu_bttn:active,#menu_bttn:focus,#menu_bttn:hover{
+    background-color: transparent !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 
   nav.navbar{

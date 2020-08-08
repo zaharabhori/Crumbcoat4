@@ -252,8 +252,8 @@ transform: scale(1.5);
     height: 240px;
   }
 
-  #menu_bttn:active,#menu_bttn:focus{
-    background-color: transparent;
+  #menu_bttn:active,#menu_bttn:focus,#menu_bttn:hover{
+    background-color: transparent !important;
     box-shadow: none;
     -webkit-box-shadow: none;
   }

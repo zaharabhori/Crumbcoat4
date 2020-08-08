@@ -25,6 +25,11 @@ nav.navbar{
    height: 130px;
 }
 
+nav li{
+  top: 35px;
+  height: 50px;
+}
+
 .land{
   position: relative;
 }
@@ -35,12 +40,11 @@ nav.navbar{
 }
 
 nav li a {
-  margin-bottom: 10px;
-  top: 35px;
-  margin: 10px;
+
   font-family: 'Great vibes', cursive;
   font-size: 40px;
   color: #a78d00!important;
+  padding-right: 10px;
 }
 
 .heading{
@@ -212,12 +216,20 @@ transform: scale(1.5);
     background-color:white;
     z-index: -1;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 16px;
+    border-bottom: 1px solid gold;
   }
   #menu ul{
     margin-top:-15px;
     height: 240px;
   }
+
+  #menu_bttn:active,#menu_bttn:focus,#menu_bttn:hover{
+    background-color: transparent !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
   nav.navbar{
     height: 100px;
   }
@@ -298,13 +310,7 @@ transform: scale(1.5);
 
 
 @media only screen and (max-width:600px) {
-  .footer{
-    background-image: url('images/cake23.jpg');
-    background-size:180% 180%;
-    position: relative;
-    margin-top: 20px;
-    padding: 0px;
-  }
+  
   .footer p{
     font-size: 25px;
 

@@ -82,6 +82,7 @@ body,html{
     margin-top: 35%;
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
+    text-align: center;
   }
   
   .backdrop2{
@@ -154,11 +155,18 @@ body,html{
       background-color:white;
       z-index: -1;
       text-align: center;
-      margin-top: 55px;
+      margin-top: 16px;
+      border-bottom: 1px solid gold;
     }
     #menu ul{
-      margin-top:-25px;
+      margin-top:-15px;
       height: 240px;
+    }
+  
+    #menu_bttn:active,#menu_bttn:focus,#menu_bttn:hover{
+      background-color: transparent !important;
+      box-shadow: none;
+      -webkit-box-shadow: none;
     }
   
     nav.navbar{
@@ -210,8 +218,8 @@ body,html{
     }
     .story p{
       margin: 10px;
-      margin-top: 5px;
-      font-size: 15px;
+      margin-top: 45px;
+      font-size: 20px;
       text-align: center;
   
     }

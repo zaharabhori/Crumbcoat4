@@ -29,8 +29,11 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="border: transparent;">
-            <i class="fas fa-align-justify fa-2x" style="color: #e2c555;"></i>
+          <button id="menu_bttn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="border: transparent;">
+            <svg style="margin-top:15px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02608" y2="82.02608" gradientUnits="userSpaceOnUse" id="color-1_MmupZtPbnw66_gr1"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="43.2365" x2="125.02608" y2="125.02608" gradientUnits="userSpaceOnUse" id="color-2_MmupZtPbnw66_gr2"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="86.2365" x2="125.02608" y2="168.02608" gradientUnits="userSpaceOnUse" id="color-3_MmupZtPbnw66_gr3"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M154.08333,53.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-1_MmupZtPbnw66_gr1)"></path><path d="M154.08333,96.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-2_MmupZtPbnw66_gr2)"></path><path d="M154.08333,139.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-3_MmupZtPbnw66_gr3)"></path></g></g></svg>
           </button>
           <div class="navbar-brand navbar-brand-centered"><a href="{% url 'home' %}" style="text-decoration: none;color: transparent;">"<img src="{% static 'images/logo2-min.png' %}" width="220px" height="160px" alt="logo"></a></div>
 
@@ -40,9 +43,9 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="nav navbar-nav navbar-right">
             <li id="item1"><a href="{% url 'home' %}">Home</a></li>
-            <li id="item2"><a href="{% url 'aboutus' %}">About us</a></li>
+            <li id="item2"><a href="{% url 'aboutus' %}">Our journey</a></li>
             <li id="item3"><a href="{% url 'menu' %}">Menu</a></li>
-            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>>
 
 
           </ul>
@@ -61,10 +64,10 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-6 col-sm-6 text-center" style="padding-right: 0px;">
         <p>Unlike all other kids, I grew up watching cookery shows! While my
           friends played out in sand and sun making mud castles, I would spend
-          all my time playing with flour and water making ‘dough castles’ -
+          all my time playing with flour and water making ‘Dough castles’ -
           These are one of the fondest memories of my childhood! Fast forward
           to my 14th Birthday - My parents gifted me an oven and my eyes
           twinkled in joy. I immediately whipped my first batch of confidence
@@ -75,16 +78,16 @@
     </div>
 
     <div class="row story row2">
-      <div class="desktop-visible col-md-7 col-sm-7" >
-        <p>As the years rolled by, I continued baking (for family and friends), and
+      <div class="desktop-visible col-md-7 col-sm-7 text-center" >
+        <p>As the years rolled by, I continued baking, and
           was persistently encouraged by everyone to take up orders
           professionally. Aiming for big, I learnt plentiful things about baking,
           and made up mind to pursue my higher education in patisserie. But
           life had other plans for me, so I ended up completing my Bachelors in
           Home Science with Human Development. Surprisingly, after three
           years, all the pieces of the puzzle started to fall in place, and I flew to
-          Bengaluru and completed Diplôme De Pâtisserie from the famous
-          Lavonne Academy of Baking Science and Pastry Arts!!
+          Bengaluru and completed Diplôme De Pâtisserie from the
+          Lavonne Academy of Baking Science and Pastry Arts!
           </p>
       </div>
       <div class="col-md-5 col-sm-5 imgbd">
@@ -94,8 +97,8 @@
         <div class="image2">
         <img src="{% static 'images/insi2-min.jpg' %}" alt="" height="420px" width="320px">
         </div>
-        <div class="desktop-hide col-md-7 col-sm-7" >
-          <p>As the years rolled by, I continued baking (for family and friends), and
+        <div class="desktop-hide col-md-7 col-sm-7 text-center" >
+          <p>As the years rolled by, I continued baking, and
             was persistently encouraged by everyone to take up orders
             professionally. Aiming for big, I learnt plentiful things about baking,
             and made up mind to pursue my higher education in patisserie. But
@@ -103,7 +106,7 @@
             Home Science with Human Development. Surprisingly, after three
             years, all the pieces of the puzzle started to fall in place, and I flew to
             Bengaluru and completed Diplôme De Pâtisserie from the famous
-            Lavonne Academy of Baking Science and Pastry Arts!!</p>
+            Lavonne Academy of Baking Science and Pastry Arts!</p>
         </div>
       </div>
 
@@ -120,14 +123,14 @@
         </div>
       </div>
 
-      <div class="col-md-6 col-sm-6">
-        <p>Everything seemed like a dream come true and I returned back to
+      <div class="col-md-6 col-sm-6 text-center" style="padding-right:0px;"">
+        <p>Everything seemed like a dream come true and I returned to
           Pune with a bag full of memories and lessons of baking! The batter of
           my hard-work and efforts turned into crisp golden brown success and
-          I launched “CRUMBCOATS” on 14th August 2018. This is when my
+          I launched “CRUMBCOAT” on 14th August 2018. This is when my
           journey of becoming a self-made entrepreneur started, and I sure
           have miles to go! Today, I am a Pastry Chef and my baking is a Labor
-          of Love!
+          of Love!<br>
           Pro tip: Never be afraid to take the whisks!</p>
       </div>
     </div>
