@@ -15,5 +15,5 @@ def aboutus(request):
     return(render(request, "aboutus.html"))
 
 def data_view(request,types):
-    imgs = images.objects.all()
+    imgs = images.objects.all().order_by('id')
     return(render(request, "gallery.html",{'imgs': imgs, 'type':types}))
