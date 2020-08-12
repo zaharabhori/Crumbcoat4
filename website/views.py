@@ -5,7 +5,7 @@ def home(request):
     return(render(request, "home.html"))
 
 def gallery(request):
-    imgs = images.objects.all()
+    imgs = images.objects.all().order_by('id')
     return(render(request, "gallery.html", {'imgs':imgs}))
 
 def menu(request):
