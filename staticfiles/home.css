@@ -369,14 +369,14 @@ transform: scale(1.5);
 
 
 .footer p{
-  font-family: 'Great vibes', cursive;
+  font-family: 'Cormorant Infant', serif;
   font-size: 30px;
   color: #a78d00!important;
 }
 
 .footer a{
   padding: 0;
-  font-family: 'Great vibes', cursive;
+  font-family: 'Cormorant Infant', serif;
   font-size: 25px;
   color: #a78d00!important;
 }
@@ -401,7 +401,7 @@ transform: scale(1.5);
 
 
 @media only screen and (max-width:600px) {
-  
+
   .footer p{
     font-size: 25px;
 

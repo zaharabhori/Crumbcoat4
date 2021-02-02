@@ -3,7 +3,7 @@ body,html{
     height:100%;
     overflow-x: hidden;
   }
-  
+
   nav.navbar{
     border: 0px;
     background-color: #e8cef1;
@@ -12,38 +12,38 @@ body,html{
     height: 130px;
     border-bottom: 1px solid gold;
   }
-  
-  
-  
+
+
+
   .navbar-brand {
     position: absolute;
     margin-top: -15px;
   }
-  
+
   .navbar-brand img{
      width: 170px;
      height: 130px;
   }
-  
+
   nav li{
     top: 35px;
     height: 50px;
   }
-  
-  
-  
+
+
+
   #menu{
     border: 0px;
     width: 100%;
   }
-  
+
   nav li a {
-  
+
     font-family: 'Great vibes', cursive;
     font-size: 40px;
     color: #a78d00!important;
   }
-  
+
   .story{
     position: relative;
     width: 75%;
@@ -53,15 +53,15 @@ body,html{
     margin-top: 30px;
     transform: translateX(-50%);
   }
-  
+
   .imgbd{
     margin-right: -20px;
   }
   .desktop-hide{
     display: none;
   }
-  
-  
+
+
   .backdrop1,.backdrop3{
     background-color:#e0cc71;
     z-index:-1;
@@ -69,15 +69,15 @@ body,html{
     margin:20px;
     height:390px;
     width:290px;
-  
+
   }
-  
+
   .image1,.image3{
     margin-top: -360px;
     margin-left: 70px;
     position: relative;
   }
-  
+
   .story p{
     margin-top: 35%;
     font-family: 'Cormorant Garamond', cursive;
@@ -85,7 +85,7 @@ body,html{
     font-size: 18px;
     text-align: center;
   }
-  
+
   .backdrop2{
     background-color:#e8cef1;
     z-index:-1;
@@ -101,11 +101,11 @@ body,html{
     margin-left: 20px;
     position: relative;
   }
-  
+
   .row3{
     margin-bottom: 220px;
   }
-  
+
   .footer{
     background-color: #e8cef1;
     background-size:100% ;
@@ -115,17 +115,17 @@ body,html{
     padding: 0px;
     border-top: 1px solid gold;
   }
-  
-  
+
+
   .footer p{
-    font-family: 'Great vibes', cursive;
+    font-family: 'Cormorant Infant', serif;
     font-size: 30px;
     color: #a78d00!important;
   }
-  
+
   .footer a{
     padding: 0;
-    font-family: 'Great vibes', cursive;
+    font-family: 'Cormorant Infant', serif;
     font-size: 25px;
     color: #a78d00!important;
   }
@@ -139,22 +139,22 @@ body,html{
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
   }
-  
+
   .footer i{
     color: #a78d00!important;
     margin-left: 5px;
     margin-right: 5px;
-  
+
   }
-  
-  
+
+
   #copyright p{
     margin-top: 10px;
     font-size: 15px;
     font-family: sans-serif;
     margin-bottom: 10px;
   }
-  
+
   @media only screen and (max-width:600px) {
 
     #copyright p{
@@ -174,18 +174,18 @@ body,html{
       margin-top:-15px;
       height: 240px;
     }
-  
+
     #menu_bttn:active,#menu_bttn:focus,#menu_bttn:hover{
       background-color: transparent !important;
       box-shadow: none;
       -webkit-box-shadow: none;
     }
-  
+
     nav.navbar{
       height: 100px;
     }
-  
-  
+
+
     .navbar-brand{
       margin-left: -20px;
       margin-top: -20px;
@@ -194,13 +194,13 @@ body,html{
       width: 120px;
       height: 105px;
     }
-  
+
     .story{
       width: 100%;
       margin-bottom: 10px;
       margin-top: 5px;
     }
-  
+
     .imgbd{
       text-align: center;
     }
@@ -208,14 +208,14 @@ body,html{
       margin-left: 50px;
       height:345px;
       width:193px;
-  
+
     }
     .backdrop2{
       margin-left:130px;
       height:325px;
       width:207px;
     }
-  
+
     .image1 img, .image2 img, .image3 img{
       height: 270px;
       width: 200px;
@@ -233,7 +233,7 @@ body,html{
       margin-top: 45px;
       font-size: 20px;
       text-align: center;
-  
+
     }
     .desktop-visible{
       display: none;
@@ -241,13 +241,13 @@ body,html{
     .desktop-hide{
       display: contents;
     }
-  
-    
+
+
     .footer p{
       font-size: 25px;
-  
+
     }
-  
+
     .footer a{
       font-size: 20px;
     }
@@ -255,4 +255,3 @@ body,html{
       padding-top: 10px;
     }
   }
-  
