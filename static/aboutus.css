@@ -118,14 +118,14 @@ body,html{
 
 
   .footer p{
-    font-family: 'Cormorant Infant', serif;
+    font-family: 'Cormorant Infant', serif !important;
     font-size: 30px;
     color: #a78d00!important;
   }
 
   .footer a{
     padding: 0;
-    font-family: 'Cormorant Infant', serif;
+    font-family: 'Cormorant Infant', serif !important;
     font-size: 25px;
     color: #a78d00!important;
   }
