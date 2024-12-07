@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import django_heroku
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+    'crumbcoat.middleware.ForceHttpMiddleware',  # Add this line
 ]
 
 ROOT_URLCONF = 'crumbcoat.urls'
@@ -77,12 +78,17 @@ WSGI_APPLICATION = 'crumbcoat.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'crumbcoat',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'Nyribo#1',
+    #     'HOST': 'localhost',
+    # }
+
+    #set up a dummy database
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'crumbcoat',
-        'USER': 'postgres',
-        'PASSWORD': 'Nyribo#1',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.dummy',
     }
 }
 
@@ -105,8 +111,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-SECURE_SSL_REDIRECT = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
+# SECURE_SSL_REDIRECT = True
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
+
+
 
 
 # Internationalization
@@ -138,14 +146,18 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 django_heroku.settings(locals())
 
-AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_ID']
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_KEY']
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 AWS_STORAGE_BUCKET_NAME = 'crumbcoat.bucket'
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'website.storage_backends.S3PrivateMediaStorage'
 AWS_S3_HOST = 's3.ap.south-1.amazonaws.com'
 AWS_S3_REGION_NAME = 'ap-south-1'
 
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# AWS_S3_USE_SSL = True  # Use SSL for secure connections
+# AWS_S3_SIGNATURE_VERSION = 's3v4'  # Use the latest secure version for signed URLs
