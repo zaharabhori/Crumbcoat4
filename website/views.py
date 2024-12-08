@@ -12,7 +12,6 @@ def gallery(request):
     file_name = 'pics/cake21.jpg'
     signed_url = storage.get_s3_signed_url(file_name)
     return(render(request, "gallery.html", {'signed_url': signed_url}))
-    #return(render(request, "aboutus.html")) #temporarily 
 
 def menu(request):
     return(render(request, "menu.html"))
